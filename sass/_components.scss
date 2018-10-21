@@ -1,0 +1,147 @@
+// HR
+.hr {
+  background-color: rgb(64, 154, 215);
+  margin: 1rem auto 3rem auto;
+  width: 10rem;
+  height: .3rem;
+  border-radius: 2px;
+}
+
+// SVG STYLE
+.svg--icon {
+  background-color: #3A99D9;
+  margin-right: 2rem; 
+  height: 3.75rem;
+  width: 3.75rem;
+  padding: .75rem;
+  fill: white;
+  transition: all .2s;
+}
+
+.svg--icon:hover {
+  transform: translatey(-3px) scale(1.03);
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.svg--brand {
+  fill: white;
+  width: 10rem;
+  height: 8rem;
+  padding: 2rem;
+  transition: all .2s;
+}
+
+$colors: (html:#E34F26,
+          css:#1572B6,
+          js:#F7DF1E,
+          bs:#563D7C,
+          sass:#CC6699,
+          nodejs:#47A248,
+          jq:#0769AD,
+          mongodb:#339933,
+          python:#3776AB,
+          git:#F05032,
+          django:#092E20);
+          
+@each $class, $color in $colors {
+  .#{$class} {
+    background-color: $color;
+  }
+  .svg--brand:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 6px -6px rgba(white, .8);
+      
+  }
+  
+}
+
+
+
+// ANIMATIONS
+// texts
+@keyframes slidefade {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  80% {
+    transform: translateX(1rem);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+}
+
+// particles style
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+// arrow bouncing
+.arrow {
+  // svg config in arrow.svg
+  width: 2.25rem;
+  cursor: pointer;
+}
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}  

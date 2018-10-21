@@ -1,0 +1,40 @@
+// TYPOGRAPHY STYLES
+
+.heading {
+  animation: slidefade 2s ease-out;
+  font-weight: 300;
+  color: white;
+  text-transform: capitalize;
+}
+
+.heading-first {
+  font-size: 4.75rem;
+  letter-spacing: .3rem; 
+}
+
+.heading-second {
+  font-size: 3rem; 
+  letter-spacing: .4rem; 
+}
+
+.heading-section-primary {
+  color: #565656;
+  font-size: 4.75rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.heading-section-tertiary {
+  color: #565656;
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #565656;
+  text-align: left;
+  line-height: 3rem;
+}
