@@ -236,7 +236,8 @@
     .cards {
         padding: 0 2%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(auto, 57rem));
         grid-template-rows: auto;
         grid-gap: 3rem;
 
@@ -247,24 +248,12 @@
             height: 31.5rem;
             width: 100;
 
-            &--1 {
-                width: 100%;
-                object-fit: cover;
-            }
-
-            &--2 {
-                width: 100%;
-                object-fit: cover;
-            }
-
-            &--3 {
-                width: 100%;
-                object-fit: cover;
-            }
-
-            &--4 {
-                width: 100%;
-                object-fit: cover;
+            @for $i from 1 through 4 {
+                &--#{$i} {
+                    width: 100%;
+                    height: inherit;
+                    object-fit: fill;
+                }
             }
         }
     }
