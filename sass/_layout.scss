@@ -51,7 +51,7 @@
             transition: inherit;
         }
         &-caption {
-            font-family: 'Gaegu', cursive;
+            font-family: 'Pacifico', cursive;
             font-size: 3.25rem;
             position: absolute;
             top: 50%;
@@ -70,7 +70,6 @@
         }
 
         &:hover &-caption {
-            // opacity: 0;
             top: 100%;
             transform: translate(-50%, 0);
             transition: inherit;
@@ -225,11 +224,34 @@
 
     // PORTFOLIO
     .portfolio {
-        height: 100vh;
+        // height: 100vh;
         padding-top: 5rem;
+        padding-bottom: 5rem;
 
         &__works {
             text-align: center;
+        }
+
+        &__cards {
+            padding: 0 2%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-column-gap: 2%;
+            grid-row-gap: 3%;
+
+            &--card {
+                height: 37rem;
+                overflow: hidden;
+                border-radius: 2px;
+                box-shadow: 1px 2px 5px #777;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
         }
     }
 }

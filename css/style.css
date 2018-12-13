@@ -24,17 +24,17 @@ body {
   background-color: #409ad7;
   margin: 1rem auto 3rem auto;
   width: 10rem;
-  height: .3rem;
+  height: 0.3rem;
   border-radius: 2px; }
 
 .svg--icon {
-  background-color: #3A99D9;
+  background-color: #3a99d9;
   margin-right: 2rem;
   height: 3.75rem;
   width: 3.75rem;
-  padding: .75rem;
+  padding: 0.75rem;
   fill: white;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .svg--icon:hover {
   transform: translatey(-3px) scale(1.03);
@@ -45,52 +45,52 @@ body {
   width: 10rem;
   height: 8rem;
   padding: 2rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .html {
-  background-color: #E34F26; }
+  background-color: #e34f26; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .css {
-  background-color: #1572B6; }
+  background-color: #1572b6; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .js {
-  background-color: #F7DF1E; }
+  background-color: #f7df1e; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .bs {
-  background-color: #563D7C; }
+  background-color: #563d7c; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .sass {
-  background-color: #CC6699; }
+  background-color: #cc6699; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .nodejs {
-  background-color: #47A248; }
+  background-color: #47a248; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .jq {
-  background-color: #0769AD; }
+  background-color: #0769ad; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
@@ -104,21 +104,21 @@ body {
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .python {
-  background-color: #3776AB; }
+  background-color: #3776ab; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .git {
-  background-color: #F05032; }
+  background-color: #f05032; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
 .django {
-  background-color: #092E20; }
+  background-color: #092e20; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
@@ -152,7 +152,11 @@ body {
   animation: bounce 3s infinite; }
 
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0); }
   40% {
@@ -163,7 +167,11 @@ body {
     transform: translateY(-15px); } }
 
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
   40% {
@@ -174,7 +182,11 @@ body {
     transform: translateY(-15px); } }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -225,7 +237,7 @@ body {
       transform: scale(1.5);
       transition: inherit; }
     .header__figure-caption {
-      font-family: 'Gaegu', cursive;
+      font-family: 'Pacifico', cursive;
       font-size: 3.25rem;
       position: absolute;
       top: 50%;
@@ -340,10 +352,26 @@ body {
     flex-wrap: wrap;
     align-items: stretch; }
   .main .portfolio {
-    height: 100vh;
-    padding-top: 5rem; }
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
     .main .portfolio__works {
       text-align: center; }
+    .main .portfolio__cards {
+      padding: 0 2%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 2%;
+      grid-row-gap: 3%; }
+      .main .portfolio__cards--card {
+        height: 37rem;
+        overflow: hidden;
+        border-radius: 2px;
+        box-shadow: 1px 2px 5px #777; }
+    .main .portfolio__img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill; }
 
 .heading {
   animation: slidefade 2s ease-out;
