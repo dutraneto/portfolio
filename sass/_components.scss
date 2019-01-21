@@ -42,7 +42,10 @@ $colors: (
     mongodb: #339933,
     python: #3776ab,
     git: #f05032,
-    django: #092e20
+    django: #092e20,
+    gitlab: #E24329,
+    linkedin: #0077B5,
+    face: #3B5998,
 );
 
 @each $class, $color in $colors {
