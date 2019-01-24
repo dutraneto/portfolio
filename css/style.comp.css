@@ -412,7 +412,7 @@ body {
   .main .contact {
     padding: 10rem 3rem 3rem 3rem;
     background-attachment: fixed;
-    background-image: linear-gradient(to right bottom, rgba(0, 131, 176, 0.5) 0%, rgba(0, 180, 219, 0.5) 100%), url("/img/leaf.jpg");
+    background-image: linear-gradient(to right bottom, rgba(0, 131, 176, 0.5) 0%, rgba(0, 180, 219, 0.5) 100%), url(../img/programming.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
