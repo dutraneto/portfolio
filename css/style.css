@@ -20,6 +20,25 @@ body {
   background-color: #614f41;
   color: white; }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background-color: black; }
+
+.spinner {
+  border: 16px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-top-color: #3c233a;
+  border-right-color: #b44227;
+  border-bottom-color: #3c233a;
+  border-left-color: #b44227;
+  animation: 3s spin linear infinite; }
+
 .hr {
   border: 0;
   box-shadow: 0 0 10px 1px #b44227;
@@ -224,6 +243,12 @@ body {
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .header {
   height: 100vh;

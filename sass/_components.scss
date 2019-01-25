@@ -1,3 +1,24 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.spinner {
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-top-color: $color-primary;
+    border-right-color: $color-secondary;
+    border-bottom-color: $color-primary;
+    border-left-color: $color-secondary;
+    animation: 3s spin linear infinite;
+}
+
 // HR
 .hr {
     border: 0;
@@ -156,5 +177,14 @@ $colors: (
         -ms-transform: translateY(-15px);
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
