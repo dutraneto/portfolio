@@ -1,15 +1,16 @@
 // HR
 .hr {
-    background-color: rgb(64, 154, 215);
+    border: 0;
+    box-shadow: 0 0 10px 1px $color-secondary;
     margin: 1rem auto 3rem auto;
     width: 10rem;
-    height: 0.3rem;
-    border-radius: 2px;
+    height: 0.5rem;
+    border-radius: 10px;
 }
 
 // SVG STYLE
 .svg--icon {
-    background-color: #3a99d9;
+    background-color: $color-secondary;
     margin-right: 2rem;
     height: 3.75rem;
     width: 3.75rem;
@@ -87,7 +88,8 @@ $colors: (
 // arrow bouncing
 .arrow {
     // svg config in arrow.svg
-    width: 2.25rem;
+    width: 2.5rem;
+    height: 3px;
     cursor: pointer;
 }
 
