@@ -184,8 +184,7 @@ body {
   z-index: -1; }
 
 .arrow {
-  width: 2.5rem;
-  height: 3px;
+  width: 4rem;
   cursor: pointer; }
 
 .bounce {

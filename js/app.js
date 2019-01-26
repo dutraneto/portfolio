@@ -1,3 +1,7 @@
+// ///////////
+// select-img
+/////////////
+
 var a = document.getElementById('a');
 var img = document.getElementById('img');
 var fig = document.getElementById('fig');
@@ -33,11 +37,13 @@ function reset() {
 }
 
 // ///////////
-
 // pre-loader
-
 /////////////
 let loader = document.getElementById('loader');
 window.addEventListener('load', function() {
     loader.style.display = 'none';
 });
+
+// /////////////////////////////////
+// fixing bug on Safari for data-AOS
+/////////////
