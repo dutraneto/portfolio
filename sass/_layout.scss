@@ -241,7 +241,7 @@
             height: 32.5rem;
             width: 100%;
 
-            @for $i from 1 through 4 {
+            @for $i from 1 through 10 {
                 &--#{$i} {
                     width: 100%;
                     height: inherit;
