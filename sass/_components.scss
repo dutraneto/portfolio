@@ -109,7 +109,7 @@ $colors: (
 // arrow bouncing
 .arrow {
     // svg config in arrow.svg
-    width: 4rem;
+    width: 3.5rem;
     cursor: pointer;
 }
 
@@ -185,5 +185,23 @@ $colors: (
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+// spaceship
+.lottie {
+    animation-name: grow;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes grow {
+    from {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    to {
+        transform: translate(3%, -3%) rotate(5deg);
     }
 }

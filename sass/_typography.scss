@@ -1,40 +1,84 @@
 // TYPOGRAPHY STYLES
+.head-box {
+    display: flex;
+    align-items: center;
+}
+
+.h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4.22vw;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    background-image: -webkit-linear-gradient(
+        left,
+        $color-primary-light 2%,
+        #fde071 12.5%,
+        #ef9671,
+        $color-secondary 62.5%,
+        $color-primary-light 98%
+    );
+    background-image: linear-gradient(
+        90deg,
+        $color-primary-light 2%,
+        #fde071 12.5%,
+        #ef9671,
+        $color-secondary 62.5%,
+        $color-primary-light 98%
+    );
+}
+
+.brackets {
+    font-size: 8.69vw;
+    font-weight: 900;
+    margin: 0 24px;
+    color: $color-secondary;
+}
 
 .heading {
-  animation: slidefade 2s ease-out;
-  font-weight: 600;
-  color: $color-secondary;
-  text-transform: capitalize;
+    animation: slidefade 2s ease-out;
+    font-weight: 600;
+    color: $color-secondary;
+    text-transform: capitalize;
 }
 
 .heading-first {
-  font-size: 4.75rem;
-  letter-spacing: .3rem; 
+    font-size: 4.75rem;
+    letter-spacing: 0.3rem;
 }
 
 .heading-second {
-  font-size: 3rem; 
-  letter-spacing: .4rem; 
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
 }
 
 .heading-section-primary {
-  color: #565656;
-  font-size: 4.75rem;
-  font-weight: 100;
-  text-transform: uppercase;
+    color: #565656;
+    font-size: 4.75rem;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .heading-section-tertiary {
-  color: #565656;
-  font-size: 3.75rem;
-  font-weight: 300;
-  text-transform: capitalize;
+    color: #565656;
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-transform: capitalize;
 }
 
 .paragraph {
-  font-size: 2rem;
-  font-weight: 100;
-  color: #565656;
-  text-align: left;
-  line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: $color-text;
+    text-align: left;
+    line-height: 3rem;
+}
+
+.text-center {
+    text-align: center;
 }

@@ -184,7 +184,7 @@ body {
   z-index: -1; }
 
 .arrow {
-  width: 4rem;
+  width: 3.5rem;
   cursor: pointer; }
 
 .bounce {
@@ -249,6 +249,18 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+.lottie {
+  animation-name: grow;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes grow {
+  from {
+    transform: translate(0, 0) rotate(0); }
+  to {
+    transform: translate(3%, -3%) rotate(5deg); } }
+
 .header {
   height: 100vh;
   width: 100%;
@@ -262,15 +274,14 @@ body {
   position: relative;
   z-index: 2; }
   .header__info {
-    height: 80vh;
-    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
   .header__figure {
-    height: 32rem;
-    width: 32rem;
+    margin-bottom: 6rem;
+    height: 30rem;
+    width: 30rem;
     border: 1px solid #b44227;
     overflow: hidden;
     border-radius: 50%;
@@ -291,7 +302,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      color: white;
+      color: #fde071;
       text-transform: capitalize;
       transition: inherit; }
     .header__figure:hover .header__figure-avatar {
@@ -404,18 +415,17 @@ body {
     .main .portfolio__works {
       text-align: center; }
   .main .cards {
-    padding: 0 2%;
+    padding: 0 5rem;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(auto, 57rem));
     grid-template-rows: auto;
-    grid-gap: 3rem; }
+    grid-gap: 2rem; }
     .main .cards__card {
       overflow: hidden;
-      border-radius: 10px;
       box-shadow: 1px 2px 5px #777;
-      height: 31.5rem;
-      width: 100; }
+      height: 32.5rem;
+      width: 100%; }
       .main .cards__card--1 {
         width: 100%;
         height: inherit;
@@ -436,38 +446,55 @@ body {
     padding: 5rem 0 19rem 0;
     text-align: center; }
   .main .contact {
-    padding: 10rem 5rem;
+    position: relative;
+    padding: 10rem 5rem 5rem 5rem;
     background-attachment: fixed;
-    background-image: linear-gradient(to right bottom, rgba(60, 35, 58, 0.5) 0%, rgba(97, 79, 65, 0.5) 100%), url(../img/programming.jpg);
+    background-image: linear-gradient(to right bottom, rgba(60, 35, 58, 0.5) 0%, rgba(97, 79, 65, 0.5) 100%), url(../img/space-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     text-align: center; }
     .main .contact__form {
+      position: relative;
       padding-top: 17rem;
       height: 70rem;
       width: 100%;
       clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 100%);
       background-color: #3c233a;
       box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.3);
-      opacity: 0.9; }
+      opacity: 0.8; }
+  .main .lottie {
+    background-color: transparent;
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    text-align: center;
+    opacity: 0.3;
+    z-index: -1;
+    top: 5rem;
+    right: 5rem; }
   .main .form {
+    position: relative;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    z-index: 1; }
     .main .form__input__box {
       margin: 5rem 0 2rem 0; }
     .main .form__text__box {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      opacity: 0.8; }
     .main .form__input {
       padding: 1rem;
       font-size: 1.4rem;
       color: #fff;
-      width: 29%;
+      width: 29.1%;
       height: 4rem;
       border: 0;
       background-color: #b44227;
-      opacity: 1; }
+      opacity: 0.8; }
       .main .form__input:not(:last-child) {
         margin-right: 2rem; }
     .main .form__input::placeholder {
@@ -489,7 +516,7 @@ body {
       border: 2px solid #fff; }
     .main .form__submit {
       height: 4rem;
-      width: 29%;
+      width: 29.1%;
       cursor: pointer;
       border: 0;
       opacity: 1;
@@ -509,6 +536,29 @@ body {
       outline: none;
       border: 2px solid #fff; }
 
+.head-box {
+  display: flex;
+  align-items: center; }
+
+.h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4.22vw;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #614f41 2%, #fde071 12.5%, #ef9671, #b44227 62.5%, #614f41 98%);
+  background-image: linear-gradient(90deg, #614f41 2%, #fde071 12.5%, #ef9671, #b44227 62.5%, #614f41 98%); }
+
+.brackets {
+  font-size: 8.69vw;
+  font-weight: 900;
+  margin: 0 24px;
+  color: #b44227; }
+
 .heading {
   animation: slidefade 2s ease-out;
   font-weight: 600;
@@ -517,11 +567,11 @@ body {
 
 .heading-first {
   font-size: 4.75rem;
-  letter-spacing: .3rem; }
+  letter-spacing: 0.3rem; }
 
 .heading-second {
   font-size: 3rem;
-  letter-spacing: .4rem; }
+  letter-spacing: 0.4rem; }
 
 .heading-section-primary {
   color: #565656;
@@ -541,6 +591,9 @@ body {
   color: #565656;
   text-align: left;
   line-height: 3rem; }
+
+.text-center {
+  text-align: center; }
 
 .u-fix-heading {
   margin-top: 10rem; }

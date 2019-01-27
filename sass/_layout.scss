@@ -1,6 +1,5 @@
 ///////////////////////////////////////////////////
 // HEADERS
-
 .header {
     height: 100vh;
     width: 100%;
@@ -15,27 +14,21 @@
         $color-primary,
         $color-primary-light
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     padding: 3rem;
     position: relative;
     z-index: 2;
 
     &__info {
-        height: 80vh;
-        margin-top: 6rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
-        // text-align: center;
-        // box-shadow: 0 1rem 3rem rgba(0,0,0,.15);
     }
 
     &__figure {
-        height: 32rem;
-        width: 32rem;
-        // margin: 3rem auto;
+        margin-bottom: 6rem;
+        height: 30rem;
+        width: 30rem;
         border: 1px solid $color-secondary;
         overflow: hidden;
         border-radius: 50%;
@@ -58,7 +51,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
+            color: #fde071;
             text-transform: capitalize;
             transition: inherit;
         }
@@ -234,19 +227,19 @@
     }
 
     .cards {
-        padding: 0 2%;
+        padding: 0 5rem;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, minmax(auto, 57rem));
         grid-template-rows: auto;
-        grid-gap: 3rem;
+        grid-gap: 2rem;
 
         &__card {
             overflow: hidden;
-            border-radius: 10px;
+
             box-shadow: 1px 2px 5px #777;
-            height: 31.5rem;
-            width: 100;
+            height: 32.5rem;
+            width: 100%;
 
             @for $i from 1 through 4 {
                 &--#{$i} {
@@ -265,36 +258,53 @@
 
     // CONTACT
     .contact {
-        padding: 10rem 5rem;
+        position: relative;
+        padding: 10rem 5rem 5rem 5rem;
         background-attachment: fixed;
         background-image: linear-gradient(
                 to right bottom,
                 rgba($color-primary, 0.5) 0%,
                 rgba($color-primary-light, 0.5) 100%
             ),
-            url(../img/programming.jpg);
+            url(../img/space-2.jpg);
         // background-color: ;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        // height: 200vh;
         clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
         text-align: center;
 
         &__form {
+            position: relative;
             padding-top: 17rem;
             height: 70rem;
             width: 100%;
             clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 100%);
             background-color: $color-primary;
             box-shadow: $box-shadow-1;
-            opacity: 0.9;
+            opacity: 0.8;
         }
     }
 
+    .lottie {
+        background-color: transparent;
+        width: 50rem;
+        height: 50rem;
+        position: absolute;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        opacity: 0.3;
+        z-index: -1;
+        top: 5rem;
+        right: 5rem;
+    }
+
     .form {
+        position: relative;
         display: flex;
         flex-direction: column;
+        z-index: 1;
 
         &__input__box {
             margin: 5rem 0 2rem 0;
@@ -302,9 +312,7 @@
 
         &__text__box {
             margin-bottom: 2rem;
-        }
-
-        &__btn__box {
+            opacity: 0.8;
         }
 
         &__input {
@@ -314,11 +322,11 @@
             padding: 1rem;
             font-size: 1.4rem;
             color: #fff;
-            width: 29%;
+            width: 29.1%;
             height: 4rem;
             border: 0;
             background-color: $color-secondary;
-            opacity: 1;
+            opacity: 0.8;
         }
 
         &__input::placeholder {
@@ -351,7 +359,7 @@
                 margin-right: 2rem;
             }
             height: 4rem;
-            width: 29%;
+            width: 29.1%;
             cursor: pointer;
             border: 0;
             opacity: 1;

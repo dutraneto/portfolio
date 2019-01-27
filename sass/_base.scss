@@ -27,11 +27,12 @@ $box-shadow-1: 0 1rem 6rem rgba(0, 0, 0, 0.3);
 $box-shadow-2: 0 1rem 3rem rgba(0, 0, 0, 0.15);
 $color-primary-light: rgb(97, 79, 65);
 $color-primary: rgb(60, 35, 58);
-$color-primary-light-2: rgb(97, 79, 65);
+$color-primary-light-2: #614f41;
 $color-tertiary: #3f51b5;
 $color-secondary: #b44227;
 $color-secondary-light: rgba(127, 255, 206, 0.6);
 $color-background-1: #e8f7fe;
+$color-text: #565656;
 
 ::selection {
     background-color: $color-primary-light-2;
