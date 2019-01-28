@@ -421,51 +421,15 @@ body {
     grid-template-columns: repeat(2, minmax(auto, 57rem));
     grid-template-rows: auto;
     grid-gap: 2rem; }
-    .main .cards__card {
-      overflow: hidden;
-      box-shadow: 1px 2px 5px #777;
-      height: 32.5rem;
-      width: 100%; }
-      .main .cards__card--1 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--2 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--3 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--4 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--5 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--6 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--7 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--8 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--9 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
-      .main .cards__card--10 {
-        width: 100%;
-        height: inherit;
-        object-fit: fill; }
+  .main .cards__card {
+    overflow: hidden;
+    box-shadow: 1px 2px 5px #777;
+    height: 32.5rem;
+    width: 100%; }
+    .main .cards__card--img {
+      width: 100%;
+      height: inherit;
+      object-fit: fill; }
   .main .social {
     padding: 5rem 0 19rem 0;
     text-align: center; }

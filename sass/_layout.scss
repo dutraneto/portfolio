@@ -233,21 +233,19 @@
         grid-template-columns: repeat(2, minmax(auto, 57rem));
         grid-template-rows: auto;
         grid-gap: 2rem;
+    }
 
-        &__card {
-            overflow: hidden;
+    .cards__card {
+        overflow: hidden;
 
-            box-shadow: 1px 2px 5px #777;
-            height: 32.5rem;
+        box-shadow: 1px 2px 5px #777;
+        height: 32.5rem;
+        width: 100%;
+
+        &--img {
             width: 100%;
-
-            @for $i from 1 through 10 {
-                &--#{$i} {
-                    width: 100%;
-                    height: inherit;
-                    object-fit: fill;
-                }
-            }
+            height: inherit;
+            object-fit: fill;
         }
     }
 
