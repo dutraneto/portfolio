@@ -319,16 +319,16 @@
 					<h1 class="heading heading-first u-fix-upper">Contact me</h1>
 					<hr class="hr">
 					<img class="lottie" src="img/Icon8loop_00155.png" alt="">
-					<form class="form" id="form" action="" method="get">					
+					<form class="form" id="form" action="https://app.convertkit.com/forms/839190/subscriptions" method="post" data-sv-form="839190" data-uid="c077488906" data-format="inline" data-version="5">
 						<div class="form__input__box">
-							<input class="form__input" type="text" placeholder="Name" required>
-							<input class="form__input" type="email" placeholder="Email" required>												
+							<input class="form__input" type="text" placeholder="Name" name="fields[first_name]" required>
+							<input class="form__input" type="email" placeholder="Email" name="email_address" required>												
 						</div>
 						<div class="form__text__box">
 							<textarea class="form__textarea" name="" id="" cols="30" rows="10" required></textarea>	
 						</div>
 						<div class="form__btn__box">
-							<button type="submit" form="#form" class="form__submit form__send">Send a message</button>
+							<button type="submit" data-element="submit" form="form" class="form__submit form__send">Send a message</button>
 							<input id="reset" type="reset" value="reset" class="form__submit">						
 						</div>
 					</form>
@@ -361,6 +361,7 @@
 			</footer>
 		</main>
 	</div>
+	<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 	<script src="js/particle.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
