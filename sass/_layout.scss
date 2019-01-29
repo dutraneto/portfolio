@@ -26,7 +26,7 @@
   }
 
   &__figure {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     height: 30rem;
     width: 30rem;
     border: 1px solid $color-secondary;
@@ -131,18 +131,41 @@
     text-align: center;
     margin: 10rem;
     box-shadow: 0 1rem 6rem rgba($color-secondary, 0.5);
+    display: grid;
+    grid-template-columns: minmax(auto, 114rem);
+    align-content: center;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
 
     &__personal {
       display: grid;
       grid-template-rows: repeat(3, 37rem);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(auto, 57rem));
       grid-gap: 0;
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 40rem);
+
+        &:last-child {
+          padding-bottom: 2rem;
+        }
+      }
 
       &-image {
         width: 100%;
         height: 100%;
         filter: grayscale(100%);
         transition: filter 0.8s;
+        object-fit: fill;
 
         &:hover {
           filter: grayscale(0) saturate(2);
@@ -152,11 +175,21 @@
         &--left {
           width: inherit;
           height: inherit;
+          @include respond(tab-port) {
+            width: 90%;
+            object-fit: cover;
+          }
         }
         &--right {
           width: inherit;
           height: inherit;
           grid-column: 2 / 3;
+
+          @include respond(tab-port) {
+            width: 90%;
+            object-fit: cover;
+            order: 0;
+          }
         }
       }
 
@@ -167,6 +200,23 @@
         justify-content: flex-start;
         align-items: baseline;
         flex-wrap: wrap;
+
+        @include respond(tab-land) {
+          padding: 1.5rem;
+        }
+        @include respond(tab-port) {
+          padding: 3rem;
+          width: 90%;
+          justify-self: center;
+          margin-top: 0;
+          border: 1px solid $color-secondary;
+          border-top: 0;
+          order: 0;
+        }
+
+        @include respond(phone) {
+          width: 90%;
+        }
       }
 
       .to-left {
