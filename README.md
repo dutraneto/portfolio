@@ -58,3 +58,4 @@ npm install
 
 - Finish Responsive Design for sections
 - Add sandwich menu for mobile designs
+- Add support for IE browser
