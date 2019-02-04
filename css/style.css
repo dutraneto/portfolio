@@ -505,16 +505,32 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .main .contact {
+        padding: 0 0 3rem 0;
+        background-color: #000;
+        background-image: none;
+        background-size: fill;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); } }
     .main .contact__form {
       position: relative;
       padding-top: 17rem;
       height: 70rem;
       width: 100%;
-      clip-path: polygon(0 0, 100% 26%, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
       background-color: #3c233a;
       box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.3);
       opacity: 0.8; }
+      @media only screen and (max-width: 37.5em) {
+        .main .contact__form {
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+          -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+          opacity: 1; } }
   .main .lottie {
     background-color: transparent;
     width: 50rem;
@@ -527,6 +543,12 @@ body {
     z-index: -1;
     top: 5rem;
     right: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main .lottie {
+        width: 20rem;
+        height: 20rem;
+        top: 10rem;
+        right: 1rem; } }
   .main .form {
     position: relative;
     display: flex;
@@ -548,6 +570,11 @@ body {
       opacity: 0.8; }
       .main .form__input:not(:last-child) {
         margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .main .form__input {
+          width: 44%; }
+          .main .form__input:not(:last-child) {
+            margin-right: 1rem; } }
     .main .form__input::placeholder {
       color: #fff; }
     .main .form__input[type='text']:focus {
@@ -562,6 +589,9 @@ body {
       opacity: 1;
       font-size: 1.4rem;
       color: #fff; }
+      @media only screen and (max-width: 37.5em) {
+        .main .form__textarea {
+          width: 90%; } }
     .main .form__textarea:focus {
       outline: none;
       border: 2px solid #fff; }
@@ -569,16 +599,20 @@ body {
       height: 4rem;
       width: 29.1%;
       cursor: pointer;
-      border: 0;
       opacity: 1;
       font-size: 1.4rem;
       text-transform: uppercase;
       color: #fff;
-      background-color: #3c233a;
+      background-color: transparent;
       border: 1px solid #b44227;
       border-radius: 3px; }
       .main .form__submit:not(:last-child) {
         margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .main .form__submit {
+          width: 44%; }
+          .main .form__submit:not(:last-child) {
+            margin-right: 1rem; } }
     .main .form__send {
       background-color: #b44227; }
     .main .form__send:hover {
