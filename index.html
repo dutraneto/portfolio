@@ -319,16 +319,16 @@
 					<h1 class="heading heading-first u-fix-upper">Contact me</h1>
 					<hr class="hr">
 					<img class="lottie" src="img/Icon8loop_00155.png" alt="">
-					<form class="form" id="form" action="https://app.convertkit.com/forms/839190/subscriptions" method="post" data-sv-form="839190" data-uid="c077488906" data-format="inline" data-version="5">
+					<form class="form" id="form" name="submit-to-google-sheet">
 						<div class="form__input__box">
-							<input class="form__input" type="text" placeholder="Name" name="fields[first_name]" required>
-							<input class="form__input" type="email" placeholder="Email" name="email_address" required>												
+							<input class="form__input" type="text" placeholder="Name" name="name" required>
+							<input class="form__input" type="email" placeholder="Email" name="email" required>												
 						</div>
 						<div class="form__text__box">
-							<textarea class="form__textarea" name="" id="" cols="30" rows="10" required></textarea>	
+							<textarea class="form__textarea" name="text" id="" cols="30" rows="10" required></textarea>	
 						</div>
 						<div class="form__btn__box">
-							<button type="submit" data-element="submit" form="form" class="form__submit form__send">Send a message</button>
+							<button type="submit" class="form__submit form__send">Send a message</button>
 							<input id="reset" type="reset" value="reset" class="form__submit">						
 						</div>
 					</form>
@@ -380,6 +380,18 @@
 			);
 		}
 	</script>
+<!-- FORMS -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxuvFITZ3KjDHzK42VHhM-v4ihXE3e_GWIBVgiGWxu02oKtC20/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>
