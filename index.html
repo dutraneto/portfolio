@@ -321,14 +321,14 @@
 					<img class="lottie" src="img/Icon8loop_00155.png" alt="">
 					<form class="form" id="form" name="submit-to-google-sheet">
 						<div class="form__input__box">
-							<input class="form__input" type="text" placeholder="Name" name="name" required>
-							<input class="form__input" type="email" placeholder="Email" name="email" required>												
+							<input id="name" class="form__input" type="text" placeholder="Name" name="name" required>
+							<input id="email" class="form__input" type="email" placeholder="Email" name="email" required>												
 						</div>
 						<div class="form__text__box">
-							<textarea class="form__textarea" name="text" id="" cols="30" rows="10" required></textarea>	
+							<textarea class="form__textarea" name="text" id="text" cols="30" rows="10" required></textarea>	
 						</div>
 						<div class="form__btn__box">
-							<button type="submit" class="form__submit form__send">Send a message</button>
+							<button id="btn" type="submit" class="form__submit form__send">Send a message</button>
 							<input id="reset" type="reset" value="reset" class="form__submit">						
 						</div>
 					</form>
@@ -383,14 +383,14 @@
 <!-- FORMS -->
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxuvFITZ3KjDHzK42VHhM-v4ihXE3e_GWIBVgiGWxu02oKtC20/exec'
-  const form = document.forms['submit-to-google-sheet']
+	const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
+			.catch(error => console.error('Error!', error.message))
+	})
 </script>
 </body>
 
