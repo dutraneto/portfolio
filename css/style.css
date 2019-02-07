@@ -32,6 +32,13 @@ body {
   background-color: #614f41;
   color: white; }
 
+<<<<<<< HEAD
+=======
+.typed-cursor {
+  font-size: 4.22vw;
+  color: #fde071; }
+
+>>>>>>> contact
 .loader {
   display: flex;
   justify-content: center;
@@ -289,9 +296,16 @@ body {
   position: relative;
   z-index: 2; }
   .header__info {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+>>>>>>> contact
     align-items: center; }
   .header__figure {
     margin-bottom: 10rem;
@@ -623,7 +637,12 @@ body {
 
 .head-box {
   display: flex;
+<<<<<<< HEAD
   align-items: center; }
+=======
+  align-items: center;
+  justify-content: center; }
+>>>>>>> contact
 
 .h1 {
   font-family: 'Playfair Display', serif;
@@ -638,7 +657,12 @@ body {
   background-image: -webkit-linear-gradient(left, #614f41 2%, #fde071 12.5%, #ef9671, #b44227 62.5%, #614f41 98%);
   background-image: linear-gradient(90deg, #614f41 2%, #fde071 12.5%, #ef9671, #b44227 62.5%, #614f41 98%); }
 
+<<<<<<< HEAD
 .brackets {
+=======
+.brackets-1,
+.brackets-2 {
+>>>>>>> contact
   font-size: 8.69vw;
   font-weight: 900;
   margin: 0 24px;
