@@ -40,9 +40,12 @@
 			
 			<div id="header__info" class="header__info">
 				<div class="head-box">
-					<span class="brackets">{</span>
-					<h1 class="h1">welcome to my digital space</h1>
-					<span class="brackets">}</span>
+					<span class="brackets-1">{</span>
+				
+						<h1 class="h1"></h1>
+						<h1 class="h1"></h1>
+					
+					<span class="brackets-2">}</span>
 				</div>
 				<figure class="header__figure">
 					<img id="img" src="https://s.gravatar.com/avatar/df4fb90a86008059cf208172305cd068?s=320" alt="My Avatar is here"
@@ -361,25 +364,33 @@
 			</footer>
 		</main>
 	</div>
-	<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 	<script src="js/particle.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/soft-scroll.js"></script>
 	<!-- Particles JS -->
-	<script>
-		function particle() {
-			Particles.init(
-				{
-					selector: '.background',
-					connectParticles: false,
-					maxParticles: 500,
-					color: ['#b25944', '#614f41'],
-					speed: 0.1,
-				}
-			);
-		}
-	</script>
+<script>
+	function particle() {
+		Particles.init(
+			{
+				selector: '.background',
+				connectParticles: false,
+				maxParticles: 500,
+				color: ['#b25944', '#614f41'],
+				speed: 0.1,
+			}
+		);
+	}
+</script>
+
+<script>
+  var typed = new Typed('.h1', {
+  strings: ["welcome to my digital space", "I'am a Front-end developer"],
+  typeSpeed: 50
+});
+</script>
+
 <!-- FORMS -->
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxuvFITZ3KjDHzK42VHhM-v4ihXE3e_GWIBVgiGWxu02oKtC20/exec'

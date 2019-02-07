@@ -6,9 +6,12 @@
 
 - HTML
 - JavaScript & jQuery
+- JS Libraries
 - CSS & SASS
+- BEM notation
 - Bootstrap 4 (grid systems)
 - Responsive Design
+- Advanced CSS design
 
 ---
 
@@ -59,3 +62,4 @@ npm install
 - Finish Responsive Design for sections
 - Add sandwich menu for mobile designs
 - Add support for IE browser
+- Add SEO services

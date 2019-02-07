@@ -2,6 +2,7 @@
 .head-box {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .h1 {
@@ -33,7 +34,8 @@
     );
 }
 
-.brackets {
+.brackets-1,
+.brackets-2 {
     font-size: 8.69vw;
     font-weight: 900;
     margin: 0 24px;
