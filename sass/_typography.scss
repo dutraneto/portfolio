@@ -18,7 +18,7 @@
 
     background-image: -webkit-linear-gradient(
         left,
-        $color-primary-light 2%,
+        $color-secondary 2%,
         #fde071 12.5%,
         #ef9671,
         $color-secondary 62.5%,
@@ -26,12 +26,16 @@
     );
     background-image: linear-gradient(
         90deg,
-        $color-primary-light 2%,
+        $color-secondary 2%,
         #fde071 12.5%,
         #ef9671,
         $color-secondary 62.5%,
         $color-primary-light 98%
     );
+
+    @include respond(phone) {
+        font-size: 5.30vw;
+    }
 }
 
 .brackets-1,
@@ -40,6 +44,10 @@
     font-weight: 900;
     margin: 0 24px;
     color: $color-secondary;
+
+    @include respond(phone) {
+        margin: 0;
+    }
 }
 
 .heading {
@@ -71,6 +79,11 @@
     font-size: 3.75rem;
     font-weight: 300;
     text-transform: capitalize;
+
+    @include respond(phone) {
+        font-size: 2.3rem;
+
+    }
 }
 
 .paragraph {

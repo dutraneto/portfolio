@@ -2,6 +2,7 @@
 .typed-cursor {
   font-size: 4.22vw;
   color: $color-text-name;
+  
 }
 
 .loader {
@@ -48,6 +49,10 @@
   @include respond(tab-port) {
     margin-right: 1rem;
   }
+  @include respond(phone) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 .svg--icon:hover {
@@ -61,6 +66,12 @@
   height: 8rem;
   padding: 2rem;
   transition: all 0.2s;
+
+  @include respond(phone) {
+    width: 7rem;
+    height: 5rem;
+    padding: 1rem;
+  }
 }
 
 $colors: (
