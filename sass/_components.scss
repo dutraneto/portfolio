@@ -2,7 +2,7 @@
 .typed-cursor {
   font-size: 4.22vw;
   color: $color-text-name;
-  
+
 }
 
 .loader {
@@ -78,6 +78,7 @@ $colors: (
   html: #e34f26,
   css: #1572b6,
   js: #f7df1e,
+  react: #61DAFB,
   bs: #563d7c,
   sass: #cc6699,
   nodejs: #47a248,
@@ -88,7 +89,8 @@ $colors: (
   django: #092e20,
   gitlab: #e24329,
   linkedin: #0077b5,
-  face: #3b5998
+  face: #3b5998,
+  figma: #E85C33,
 );
 
 @each $class, $color in $colors {
