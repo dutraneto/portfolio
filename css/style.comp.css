@@ -116,6 +116,13 @@ body {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
 
+.react {
+  background-color: #61DAFB; }
+
+.svg--brand:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
+
 .bs {
   background-color: #563d7c; }
 
@@ -188,6 +195,13 @@ body {
 
 .face {
   background-color: #3b5998; }
+
+.svg--brand:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 6px -6px rgba(255, 255, 255, 0.8); }
+
+.figma {
+  background-color: #E85C33; }
 
 .svg--brand:hover {
   transform: translateY(-5px) scale(1.05);
