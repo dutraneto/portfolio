@@ -63,6 +63,7 @@
             transform: scale(3);
             transition: inherit;
             width: 100%;
+            height: auto;
         }
         &-caption {
             font-family: 'Pacifico', cursive;
@@ -375,6 +376,12 @@
             @include respond(phone) {
                 object-fit: contain;
             }
+            @include respond(tab-port) {
+                object-fit: contain;
+            }
+            @include respond(tab-land) {
+                object-fit: contain;
+            }
         }
     }
 
@@ -538,6 +545,10 @@
         }
 
         &__send {
+            background-color: $color-secondary;
+        }
+
+        &__submit:hover {
             background-color: $color-secondary;
         }
 

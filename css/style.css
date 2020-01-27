@@ -349,7 +349,8 @@ body {
       filter: brightness(70%) blur(8px);
       transform: scale(3);
       transition: inherit;
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     .header__figure-caption {
       font-family: 'Pacifico', cursive;
       font-size: 3rem;
@@ -572,6 +573,12 @@ body {
       @media only screen and (max-width: 37.5em) {
         .main .cards__card--img {
           object-fit: contain; } }
+      @media only screen and (max-width: 56.25em) {
+        .main .cards__card--img {
+          object-fit: contain; } }
+      @media only screen and (max-width: 75em) {
+        .main .cards__card--img {
+          object-fit: contain; } }
   .main .social {
     padding: 5rem 0 19rem 0;
     text-align: center; }
@@ -690,6 +697,8 @@ body {
           .main .form__submit:not(:last-child) {
             margin-right: 1rem; } }
     .main .form__send {
+      background-color: #b44227; }
+    .main .form__submit:hover {
       background-color: #b44227; }
     .main .form__send:hover {
       background-color: #c94a2c; }
