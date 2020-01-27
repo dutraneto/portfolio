@@ -308,10 +308,9 @@ body {
   width: 100%;
   background: #000000;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #434343, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #434343, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("../img/background-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 3rem;
   position: relative;
   z-index: 2; }
@@ -700,6 +699,10 @@ body {
       outline: none;
       border: 2px solid #fff; }
 
+@font-face {
+  font-family: 'Blanka';
+  src: url("../media/Blanka-Regular.otf"); }
+
 .head-box {
   display: flex;
   align-items: center;
@@ -719,7 +722,7 @@ body {
   background-image: linear-gradient(90deg, #b44227 2%, #fde071 12.5%, #ef9671, #b44227 62.5%, #614f41 98%); }
   @media only screen and (max-width: 37.5em) {
     .h1 {
-      font-size: 5.30vw; } }
+      font-size: 5.3vw; } }
 
 .brackets-1,
 .brackets-2 {
@@ -733,6 +736,7 @@ body {
       margin: 0; } }
 
 .heading {
+  font-family: 'Blanka', sans-serif;
   animation: slidefade 2s ease-out;
   font-weight: 600;
   color: #b44227;

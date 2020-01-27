@@ -1,46 +1,46 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "my portfolio",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --verbose",
-    "start": "npm-run-all --parallel watch:sass devserver",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "compress:js": "node-minify --compressor uglify-js --input '<path/to/arvg>' --output '<path/to/argv>'.js'",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/dutraneto/portfolio.git"
-  },
-  "keywords": [
-    "portfolio",
-    "site",
-    "html",
-    "css"
-  ],
-  "author": "DutraNeto <dutraneto@me.com> (http://dutraneto.github.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dutraneto/portfolio/issues"
-  },
-  "homepage": "https://github.com/dutraneto/portfolio#readme",
-  "devDependencies": {
-    "@node-minify/uglify-js": "^5.3.0",
-    "autoprefixer": "^9.7.3",
-    "concat": "^1.0.3",
-    "node-minify": "^3.6.0",
-    "node-sass": "^4.13.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0",
-    "uglify-js": "^3.7.5"
-  },
-  "dependencies": {
-    "@node-minify/cli": "^5.3.0",
-    "live-server": "^1.2.1"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "my portfolio",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass sass/main.scss css/style.css -w",
+        "devserver": "live-server --verbose",
+        "start": "npm-run-all --parallel watch:sass devserver",
+        "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+        "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+        "compress:js": "node-minify --compressor uglify-js --input '<path/to/arvg>' --output '<path/to/argv>'.js'",
+        "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/dutraneto/portfolio.git"
+    },
+    "keywords": [
+        "portfolio",
+        "site",
+        "html",
+        "css"
+    ],
+    "author": "DutraNeto <dutraneto@me.com> (http://dutraneto.github.io/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dutraneto/portfolio/issues"
+    },
+    "homepage": "https://github.com/dutraneto/portfolio#readme",
+    "devDependencies": {
+        "@node-minify/uglify-js": "^5.3.0",
+        "autoprefixer": "^9.7.3",
+        "concat": "^1.0.3",
+        "node-minify": "^3.6.0",
+        "node-sass": "^4.13.1",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^7.1.0",
+        "uglify-js": "^3.7.5"
+    },
+    "dependencies": {
+        "@node-minify/cli": "^5.3.0",
+        "live-server": "^1.2.1"
+    }
 }
