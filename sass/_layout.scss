@@ -354,7 +354,6 @@
 
         @include respond(phone) {
             padding: 1rem;
-            grid-gap: 1rem;
         }
 
         &__card {
