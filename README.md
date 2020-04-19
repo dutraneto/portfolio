@@ -45,7 +45,7 @@ npm install
 
 ## Live Demo
 
-### https://dutraneto.com/portfolio
+### https://dutraneto.tech
 
 ---
 

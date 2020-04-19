@@ -569,8 +569,7 @@ a:active {
         object-fit: fill; } }
     @media only screen and (max-width: 37.5em) {
       .main .cards {
-        padding: 1rem;
-        grid-gap: 1rem; } }
+        padding: 1rem; } }
     .main .cards__card {
       overflow: hidden;
       box-shadow: 1px 2px 5px #777;
@@ -611,7 +610,7 @@ a:active {
     position: relative;
     padding: 15rem 5rem 10rem 5rem;
     background-attachment: fixed;
-    background-image: url(../img/background-2.jpg);
+    background-image: url(../img/background-2.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
