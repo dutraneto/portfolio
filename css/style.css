@@ -529,7 +529,10 @@ a:active {
         padding-left: 2rem;
         padding-right: 2rem; } }
     .main .tools__tech {
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      background-clip: padding-box;
       height: 100%;
       width: 100%;
       padding: 5rem;
