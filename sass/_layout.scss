@@ -43,8 +43,6 @@
 
         @include respond(big-desktop) {
             margin-bottom: 6rem;
-            height: 60rem;
-            width: 60rem;
         }
 
         @include respond(phone) {

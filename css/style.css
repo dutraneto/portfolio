@@ -345,9 +345,7 @@ a:active {
     justify-self: center; }
     @media only screen and (min-width: 112.5em) {
       .header__figure {
-        margin-bottom: 6rem;
-        height: 60rem;
-        width: 60rem; } }
+        margin-bottom: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__figure {
         height: 30rem;
