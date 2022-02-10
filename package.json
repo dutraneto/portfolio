@@ -41,6 +41,6 @@
     "dependencies": {
         "@node-minify/cli": "^6.1.0",
         "live-server": "^1.2.1",
-        "node-sass": "^5.0.0"
+        "node-sass": "^7.0.0"
     }
 }
