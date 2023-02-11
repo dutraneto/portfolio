@@ -39,7 +39,7 @@
         "uglify-js": "^3.7.5"
     },
     "dependencies": {
-        "@node-minify/cli": "^6.1.0",
+        "@node-minify/cli": "^7.1.0",
         "live-server": "^1.2.1",
         "node-sass": "^5.0.0"
     }
