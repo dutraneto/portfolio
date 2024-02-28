@@ -40,6 +40,7 @@
     },
     "dependencies": {
         "@node-minify/cli": "^6.1.0",
+        "dotenv": "^16.4.5",
         "live-server": "^1.2.1",
         "node-sass": "^5.0.0"
     }

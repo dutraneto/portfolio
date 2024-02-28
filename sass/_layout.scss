@@ -447,12 +447,13 @@
         }
 
         &__form {
+            margin: 0 auto;
             position: relative;
-            padding-top: 17rem;
-            height: 70rem;
+            padding: 17rem 2rem 10rem 2rem;
             width: 100%;
-            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-            -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+            max-width: 100rem;
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
             background-color: $color-primary;
             box-shadow: $box-shadow-1;
             opacity: 0.8;
@@ -487,13 +488,27 @@
     }
 
     .form {
+        margin: 0 auto;
+        padding-top: 5rem;
+        width: 100%;
+        max-width: 70rem;
         position: relative;
         display: flex;
         flex-direction: column;
         z-index: 1;
 
         &__input__box {
-            margin: 5rem 0 2rem 0;
+            display: flex;
+            gap: 2rem;
+            margin: 0 0 2rem 0;
+        }
+
+        &__input__box--email {
+            margin: 0 0 2rem 0;
+
+            #email {
+                width: 100%;
+            }
         }
 
         &__text__box {
@@ -502,48 +517,34 @@
         }
 
         &__input {
-            &:not(:last-child) {
-                margin-right: 2rem;
-            }
             padding: 1rem;
             font-size: 16px;
             color: #fff;
-            width: 29.1%;
+            width: 50%;
             height: 4rem;
             border: 0;
             background-color: $color-secondary;
             opacity: 0.8;
-
-            @include respond(phone) {
-                width: 44%;
-                &:not(:last-child) {
-                    margin-right: 1rem;
-                }
-            }
         }
 
-        &__input::placeholder {
-            color: #fff;
+        &__input::placeholder, &__textarea::placeholder {
+            color: #ffffff;
         }
 
         &__input[type='text']:focus {
-            border: 2px solid #fff;
+            border: 2px solid #ffffff;
             outline: none;
         }
 
         &__textarea {
             padding: 1rem;
             height: 15rem;
-            width: 60%;
+            width: 100%;
             border: 0;
             background-color: $color-secondary;
             opacity: 1;
             font-size: 16px;
-            color: #fff;
-
-            @include respond(phone) {
-                width: 90%;
-            }
+            color: #ffffff !important;
         }
 
         &__textarea:focus {
