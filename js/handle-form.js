@@ -1,10 +1,9 @@
 // https://legacydocs.hubspot.com/docs/methods/forms/submit_form_v3_authentication
-
 const endpoint = 'https://api.hsforms.com/submissions/v3/integration/submit'
-// const portalId = proccess.env.PORTAL_ID; // '738009'
-// const formId = proccess.env.FORM_ID
-// const formUrl = `${endpoint}/${portalId}/${formId}`
-const formUrl = 'https://api.hsforms.com/submissions/v3/integration/submit/45391027/bf9cf553-5fe3-4b2a-8fd2-766677937874'
+const portalId = '45391027'
+const formId = '4d73d9f8-481d-4870-8b88-8416a38c7fe9'
+const formUrl = `${endpoint}/${portalId}/${formId}`
+console.log(formUrl)
 const hubspotForm = document.forms['submit-to-hs']
 
 // JSON format for HS forms
